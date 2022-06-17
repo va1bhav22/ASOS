@@ -1,0 +1,21 @@
+.Footercopyright{
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  font-size: 13px;
+  cursor:pointer;
+  justify-content: space-between;
+}
+.footerItem>li>a{
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+}
+
+.footerItem>li>a:hover{
+  color:#149EF1;
+}
+
+.FooterMaiDiv{
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}

@@ -1,0 +1,18 @@
+.ProductData{
+  display:grid;
+  grid-template-columns: repeat(4 ,300px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.ADDTOCART{
+  background-color: aliceblue;
+  font-weight: bold;
+}
+
+.ADDTOCART:hover{
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,20 @@
+.REGISTER{
+  background-color: #018849;
+  width: 360px;
+  border-radius: 0%;
+  padding: 15px 0px 15px 0px;
+  color: white;
+  font-weight: bold;
+  /* height: 50px; */
+}
+.REGISTER:hover{
+background: #006637;
+color: white;
+}
+/* .CheckMaindiv{
+  border: 1px solid gray;
+} */
+.TOTAL{
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.NextNavul>li{
+  /* border: 1px solid red; */
+  padding: 12px;
+  font-size: 12px;
+  color:white;
+  cursor:default;
+ 
+}
+.NextNavul
+{
+  margin-left: 30px;
+}
+
+.NextNavul>li:hover{
+background-color:#eee;
+color: black;
+}
+.NextNavBackChange{
+  background-color: #d01345;
+  font-weight:bold;
+}
+
+.NextNavBackChange:hover{
+  background-color:#eee;
+}

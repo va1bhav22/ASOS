@@ -1,0 +1,14 @@
+.Mininav{
+  display: flex;
+  gap: 20px;
+  justify-content:end;
+  width: 97%;
+  
+}
+.Mininav>div:hover{
+  color: blue;
+  cursor:pointer;
+}
+.LineNav{
+  color: lightgray;
+}

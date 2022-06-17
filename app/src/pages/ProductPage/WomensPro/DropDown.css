@@ -1,0 +1,68 @@
+.DropNav{
+  height:50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.DropNav>div>a{
+  margin-left: 20px;
+  text-decoration: none;
+  font-size:14px;
+  color: gray;
+  
+}
+.DropText{
+  text-align: center;
+  background-color:#EEF4F7  ;
+  padding: 20px;
+}
+.DropButtons{
+  height: 60px;
+  /* padding: 10px; */
+  /* background-color: aqua; */
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  
+}
+.DropButtonsData{
+  display: flex;
+  gap: 20px;
+  /* position: absolute; */
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  
+}
+.DropButtonsData>div{
+  padding: 4px 10px 4px 12px;
+  margin-top: 14px;
+  /* position: absolute; */
+  background-color: #E6EDF1 ;
+  border-radius: 20px;
+  
+}
+.DropButtonsData>div:hover{
+  background-color: #CDD2D5   ;
+}
+
+#DropDownStart{
+  width: 300px;
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+
+}
+.DropIsStart{
+ padding-top: 10px;
+  /* background-color: red; */
+  width: 95%;
+  display: flex;
+  gap: 30px;
+  margin: auto;
+}
+
+.DropDownStart:focus{
+ border-color: aqua;
+}
+
+

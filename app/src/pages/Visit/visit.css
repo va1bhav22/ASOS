@@ -1,0 +1,14 @@
+.Visit>div img{
+  width: 35px;
+  
+}
+.Visit{
+  display: flex;
+  height: 60px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.VisitApp:hover{
+  border: 1px solid blue;
+}

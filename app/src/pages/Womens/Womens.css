@@ -1,0 +1,74 @@
+
+.WomensBannerImgData{
+  background-image: url('https://content.asos-media.com/-/media/homepages/ww/2022/june/06/hero/hero_1258x600.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  margin-left:50px;
+}
+.MensBannerImgData{
+  /* margin-left:120px; */
+  /* background-color: red; */
+  text-align: center;
+  /* margin-top: 380px; */
+ 
+  position: absolute;
+}
+.WomensBannerImgData1{
+padding: 0px;
+background-color: white;
+width: 270px;
+position: absolute;
+height: 70px;
+margin-left: 480px;
+margin-top: 380px;
+text-align: center;
+font-size: 46px;
+font-weight: bold;
+}
+.WomensBannerImgData2{
+  padding:10px;
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 480px;
+  margin-top: 380px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.MensBannerImgData2:hover{
+color: white;
+background: black;
+}
+
+.MAinCartImage{
+  height: 380px;
+}
+.MAinBigCartImage{
+  height:650px;
+}
+.MAinBigCartImageButton{
+  width: 200px;
+  border:3px solid  black;
+  padding: 13px;
+  margin-top: 20px;
+font-weight: bold;
+border-radius: 0%;
+}
+.MAinBigCartImageButton:hover{
+  color: #fff;
+  background-color:black;
+}
+.TopBrandsImgDiv{
+  display: flex;
+  justify-content: center;
+}
+.TopBrandsImgDiv>div>img{
+  width: 200px;
+}
+.TopBrandsheading{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}

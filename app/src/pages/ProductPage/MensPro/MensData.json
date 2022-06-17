@@ -1,0 +1,265 @@
+{
+  "mensData":[
+   {
+    
+    "id":1,
+    "imgu":"https:////images.asos-media.com/products/asos-design-halskette-mit-herzanhanger-mit-weien-schmucksteinen/201245196-1-silver?$n_480w$&wid=476&fit=constrain",
+    "title":"ASOS DESIGN heart pendant necklace with white gemstones",
+    "price": 16.99,
+    "rating":3.2
+   },
+   {
+     "id":2,
+    "imgu":"https://images.asos-media.com/products/asos-design-ring-aus-sterlingsilber-mit-gewickeltem-schlangendesign/200613473-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN ring in sterling silver with a coiled snake design",
+    "price":38.99 ,
+    "rating":4.2
+   },
+   {
+     "id":3,
+    "imgu":"https://images.asos-media.com/products/asos-design-2er-pack-mehrlagige-halsketten-in-silber-optik-mit-vintage-design-und-schlangenanhanger/202605665-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN  2er-Pack mehrlagige Halsketten in Silber-Optik mit Vintage-Design und Schlangenanhänger",
+    "price": 12.99,
+    "rating":2.2
+   },
+   {
+     "id":4,
+    "imgu":"https://images.asos-media.com/products/asos-design-frohliche-festival-perlenhalskette-mit-obst-anhangern-in-bunten-farben/202605691-1-multi?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Fröhliche Festival-Perlenhalskette mit Obst-Anhängern in bunten Farben",
+    "price":12.99 ,
+    "rating":5
+   },
+   {
+     "id":5,
+    "imgu":"https://images.asos-media.com/products/asos-design-grobgliedrige-halskette-in-silberoptik/202108984-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Grobgliedrige Halskette in Silberoptik",
+    "price":19.99 ,
+    "rating":3
+   },
+   {
+     "id":6,
+    "imgu":"https://images.asos-media.com/products/asos-design-bandring-in-silber-mit-chinesischen-symbolen/200559237-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Bandring in Silber mit chinesischen Symbolen",
+    "price":7.99,
+    "rating":3.6
+   },
+   {
+     "id":7,
+    "imgu":"https://images.asos-media.com/products/asos-design-breitgliedrige-halskette-mit-schmetterlingsanhanger-aus-mehrfarbiger-emaille/202240654-1-gold?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Breitgliedrige Halskette mit Schmetterlingsanhänger aus mehrfarbiger Emaille",
+    "price": 16.99,
+    "rating":3.2
+   },
+   {
+     "id":8,
+    "imgu":"https://images.asos-media.com/products/asos-design-breitgliedrige-halskette-mit-schmetterlingsanhanger-aus-mehrfarbiger-emaille/202240654-1-gold?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Schmale, echt versilberte Halskette mit ovalem Rosenanhänger",
+    "price":12.99 ,
+    "rating":2.2
+   },
+   {
+     "id":9,
+    "imgu":"https://images.asos-media.com/products/asos-design-festival-korperschmuck-aus-netzstoff-und-kette-in-silberoptik/201980072-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Festival – Körperschmuck aus Netzstoff und Kette in Silberoptik",
+    "price": 42.99,
+    "rating":5
+   },
+   {
+     "id":10,
+    "imgu":"https://images.asos-media.com/products/asos-design-kurze-figaro-halskette-aus-sterlingsilber/202071956-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Kurze Figaro-Halskette aus Sterlingsilber",
+    "price":28.99,
+    "rating":3.2
+   },
+   {
+     "id":11,
+    "imgu":"https://images.asos-media.com/products/asos-design-schmale-venezianerketten-in-silber-optik-im-2er-pack/202163129-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Schmale Venezianerketten in Silber-Optik im 2er-Pack",
+    "price":9.99,
+    "rating":1.2
+   },
+   {
+     "id":12,
+    "imgu":"https://images.asos-media.com/products/asos-design-flacher-silberfarbener-ring-aus-edelstahl-mit-beweglichem-kettendetail/200559507-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Flacher, silberfarbener Ring aus Edelstahl mit beweglichem Kettendetail",
+    "price":12.99,
+    "rating":3.2
+   },
+   {
+     "id":13,
+    "imgu":"https://images.asos-media.com/products/asos-design-mit-echtem-silber-beschichtetes-armband-mit-geteiltem-panzerketten-figaro-design/202605558-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Mit echtem Silber beschichtetes Armband mit geteiltem Panzerketten-Figaro-Design",
+    "price": 14.99,
+    "rating":3.2
+   },
+
+   {
+     "id":14,
+    "imgu":"https://images.asos-media.com/products/asos-design-halskette-mit-kompass-anhanger-in-silberoptik/202605787-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Halskette mit Kompass-Anhänger in Silberoptik",
+    "price":9.99 ,
+    "rating":3.1
+   },
+   {
+     "id":15,
+    "imgu":"https://images.asos-media.com/products/asos-design-versilbertes-figaro-kettenarmband/202105066-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Versilbertes Figaro-Kettenarmband",
+    "price":14.99,
+    "rating":3.9
+   },
+   {
+     "id":16,
+    "imgu":"https://images.asos-media.com/products/asos-design-kette-aus-edelstahl-mit-gehammertem-kreisformigem-anhanger-in-silber/202128342-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Kette aus Edelstahl mit gehämmertem kreisförmigem Anhänger, in Silber",
+    "price":16.99 ,
+    "rating":3.2
+   },
+   {
+     "id":17,
+    "imgu":"https://images.asos-media.com/products/asos-design-halskette-mit-kreuzanhanger-in-poliertem-silber-und-stachelhalsband-3er-set/202240717-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Halskette mit Kreuzanhänger in poliertem Silber und Stachelhalsband, 3er-Set",
+    "price":16.99 ,
+    "rating":3.2
+   },
+    
+    {
+      "id":18,
+    "imgu":"https://images.asos-media.com/products/asos-design-flacher-silberfarbener-ring/200559211-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Flacher, silberfarbener Ring",
+    "price": 7.99,
+    "rating":3.6
+   }
+    , {
+      "id":19,
+    "imgu":"https://images.asos-media.com/products/asos-design-kette-aus-edelstahl-mit-weltkugel-anhanger-in-silber/200903224-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Kette aus Edelstahl mit Weltkugel-Anhänger, in Silber",
+    "price":16.99,
+    "rating":3.2
+   },
+   {
+     "id":20,
+    "imgu":"https://images.asos-media.com/products/asos-design-festival-perlenarmbander-in-grautonen-mit-nautischem-anhanger-im-4er-pack/201555888-1-grey?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Festival-Perlenarmbänder in Grautönen mit nautischem Anhänger im 4er-Pack",
+    "price":14.99,
+    "rating":3.2
+   },
+   {
+     "id":21,
+    "imgu":"https://images.asos-media.com/products/asos-design-flacher-ring-aus-sterlingsilber/201211372-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Flacher Ring aus Sterlingsilber",
+    "price":31.99,
+    "rating":3.2
+   },
+
+    
+   {
+    "id":22,
+    "imgu":"https://images.asos-media.com/products/asos-design-silberfarbener-edelstahl-bandring-mit-schlangen-und-kreuzmotiven/202147991-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Silberfarbener Edelstahl-Bandring mit Schlangen- und Kreuzmotiven",
+    "price":9.99,
+    "rating":3.2
+   },
+   {
+     "id":23,
+     "imgu":"https://images.asos-media.com/products/asos-design-silberner-ring-aus-edelstahl-mit-romischen-zahlen/202605707-1-silver?$n_320w$&wid=317&fit=constrain",
+     "title":"ASOS DESIGN – Silberner Ring aus Edelstahl mit römischen Zahlen",
+     "price":9.99,
+     "rating":4.5
+   },
+   {
+     "id":24,
+    "imgu":"https://images.asos-media.com/products/asos-design-halskette-aus-sterlingsilber-mit-damemotiv-anhanger/202305815-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN – Halskette aus Sterlingsilber mit Damemotiv-Anhänger",
+    "price":35.99,
+    "rating":4.5
+  },
+  {
+     "id":25,
+    "imgu":"https://images.asos-media.com/products/asos-design-3-mm-breite-figaro-halskette-mit-pik-ass-anhanger-in-silberoptik/202605668-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN 3mm figaro necklace with ace of spades pendant in silver finish",
+    "price":7.99,
+    "rating":4
+  },
+  
+   {
+    "id":26,
+  "imgu":"https://images.asos-media.com/products/asos-design-halskette-mit-eispave-schmucksteinen/201980121-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN necklace with ice pavé gemstones",
+    "price":9.99 ,
+    "rating":3.3
+  },
+  
+  {
+     "id":27,
+    "imgu":"https://images.asos-media.com/products/asos-design-wickelring-in-skorpionform-aus-poliertem-sterlingsilber/200613559-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN scorpion wrap ring in polished sterling silver",
+    "price": 32.99,
+    "rating":5
+  },
+  {
+     "id":28,
+    "imgu":"https://images.asos-media.com/products/asos-design-perlenarmband-in-schwarz-und-blau/201538289-1-black?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN beaded bracelet in black and blue",
+    "price":9.99,
+    "rating":3.1
+  },
+  {
+     "id":29,
+    "imgu":"https://images.asos-media.com/products/asos-design-ring-aus-sterlingsilber-mit-krake/200613345-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN ring in sterling silver with octopus",
+    "price":35.99 ,
+    "rating":2
+  },
+  {
+     "id":30,
+    "imgu":"https://images.asos-media.com/products/asos-design-festival-dunne-body-chain-in-goldoptik/202605403-1-gold?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN Festival skinny body chain in gold finish",
+    "price":24.99 ,
+    "rating":4.9
+  },
+  {
+     "id":31,
+    "imgu":"https://images.asos-media.com/products/asos-design-festival-body-chain-mit-frohlichen-bunten-perlen/202605303-1-multi?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN festival body chain with fun colorful beads",
+    "price": 35,
+    "rating":3
+  },
+  {
+     "id":32,
+     "imgu":"https://images.asos-media.com/products/asos-design-siegelring-aus-sterlingsilber-mit-lowendesign-in-silber-poliert/200613568-1-silver?$n_320w$&wid=317&fit=constrain",
+     "title":"ASOS DESIGN signet ring in sterling silver with a lion design in polished silver",
+     "price": 49.88,
+     "rating":4.5
+   }
+  ,{
+    "id":33,
+    "imgu":"https://images.asos-media.com/products/asos-design-2er-pack-halsketten-mit-kunstperlen-und-kreuz-anhanger-in-silber/201092021-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN 2 pack faux pearl necklaces with cross pendant in silver",
+    "price": 100,
+    "rating":3.2
+  },
+  {
+     "id":34,
+    "imgu":"https://images.asos-media.com/products/asos-design-festival-sonnenbrillenkette-mit-buntem-ombre-design/202605324-1-multi?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN festival sunglasses chain in colorful ombré design",
+    "price":12.88 ,
+    "rating":5
+  },
+  {
+     "id":35,
+    "imgu":"https://images.asos-media.com/products/asos-design-ring-aus-sterlingsilber-im-krokodildesign/200613521-1-silver?$n_320w$&wid=317&fit=constrain",
+    "title":"ASOS DESIGN ring in sterling silver with crocodile design",
+    "price":33 ,
+    "rating":4
+  },
+
+  {
+     "id":36,
+     "imgu":"https://images.asos-media.com/products/asos-design-festival-korperschmuck-in-silber-mit-bunten-schmucksteinen/202305787-1-silver?$n_320w$&wid=317&fit=constrain",
+     "title":"ASOS DESIGN festival body jewelry in silver with colorful gemstones",
+     "price":35.99,
+     "rating":3.7
+   }
+
+   ]
+}

@@ -1,0 +1,22 @@
+.inputicon i {
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.mainNav{
+  display:flex;
+  
+  justify-content: space-around;
+  height: 65px;
+  background-color: black;
+  align-items: center;
+  /* color: white; */
+}
+.NavInput{
+  width: 750px;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}

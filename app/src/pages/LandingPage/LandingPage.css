@@ -1,0 +1,61 @@
+/* .landingBTN{
+
+} */
+
+.LandigBackImg{
+  /* position: relative; */
+  width:100%;
+  background-size:cover;
+  height:610px;
+  background-image: url("https://content.asos-media.com/-/media/homepages/unisex/generic-hp/archive/oct-2021/microsoftteams-image-(10).png");
+
+}
+.LandigBackImgUnderData{
+  position: absolute;
+  margin-left: 460px;
+  margin-top: 245px;
+  text-align: center;
+}
+.welHead{
+  font-size: 3rem;
+  font-weight:700;
+  color:#fff;
+  /* line-height: 30px; */
+}
+.welHeadbrand{
+  font-size:17px;
+  color: #fff;
+  margin-top: -20px;
+  
+}
+.LandigBackImgUnderDataButton{
+  margin-top: 30px;
+}
+.landingBTN{
+  width: 150px;
+ 
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 0%;
+  margin-left: 10px;
+  
+}
+.landingBTN:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+.PrimiumDelivery{
+  background-color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+

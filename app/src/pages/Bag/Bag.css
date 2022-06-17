@@ -1,0 +1,17 @@
+.GreebBTN{
+  width: 140px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid  #018849;
+}
+.GreebBTN:hover{
+  background-color: #018849;
+  color: #fff;
+}
+.CatPageItem{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+  
+}
