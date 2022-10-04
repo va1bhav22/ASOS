@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Bag from '../pages/Bag/Bag';
 import CheckOutDetails from '../pages/checkout/CheckOutDetails';
 import MainCheckOut from '../pages/checkout/MainCheckOut';
+import Discpage from '../pages/DiscriptionPage/Discpage';
 import LandingPage from '../pages/LandingPage/LandingPage';
 import Mens from '../pages/Mens/Mens';
 import MensProduct from '../pages/ProductPage/MensPro/MensProduct';
@@ -30,6 +31,7 @@ const AllRoutes = () => {
         <Route path='/WomensProduct' element={<WomensProduct/>} />
         <Route path='/CheckOutDetails'element={<CheckOutDetails/>} />
         <Route path='/MainCheckOut' element={<MainCheckOut/>}/>
+        <Route path='/DescPage' element={<Discpage/>}/>
       </Routes>
     </div>
   )

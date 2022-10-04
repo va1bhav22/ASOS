@@ -5,12 +5,12 @@ import{ useEffect, useState } from 'react';
 import './WomensProduct.css'
 import Visit from '../../Visit/Visit';
 import FooterPage from '../../Footer/Footer';
-import {nanoid} from 'nanoid'
+// import {nanoid} from 'nanoid'
 const WomensProduct = () => {
 
   const [todos,setTodos]=useState([]);
   useEffect(()=>{
-    fetch("http://localhost:8080/womenData")
+    fetch("https://6325f6a94cd1a2834c47f804.mockapi.io/ASSOSWOMWN")
     .then((r)=>r.json())
     .then((d)=>{
         console.log(d)
@@ -29,8 +29,8 @@ const WomensProduct = () => {
      </div>
      <div className='ProductData'>
      {todos.map((todo)=>(
-        <div>
-          <div key={nanoid()}>{todo.value}</div>
+        <div  key={todos.id}>
+          <div>{todo.value}</div>
          
            <div>
            <div><img style={{width:"300px"}} src={todo.imgu} alt="" />

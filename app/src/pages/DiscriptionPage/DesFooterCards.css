@@ -1,0 +1,7 @@
+.ProductDataDessc{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    margin: auto;
+    width: 70%;
+  }

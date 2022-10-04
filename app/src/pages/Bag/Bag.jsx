@@ -9,10 +9,13 @@ const Bag = () => {
   const navigate=useNavigate()
 const  [backData,setBackData]=useState([])
   const cardGet=JSON.parse(localStorage.getItem("DataCard"))
+  const [total, setTotal] = useState(0);
  
 useEffect(()=>{
   setBackData(cardGet)
 },[])
+
+
   const handleDelete=(id)=>{
     // console.log(id)
       // event.preventDefault()
@@ -21,8 +24,9 @@ useEffect(()=>{
     setBackData(cardGet)
   }
 
-    const Pocket=()=>{
-      navigate('/MainCheckOut')
+    const Pocket=(e)=>{
+      // navigate('/MainCheckOut')
+            
     }
 
   return (
@@ -44,7 +48,7 @@ useEffect(()=>{
     </div>
      <div className='CatPageItem'>
 {backData.map((todo)=>(
-          <div>
+          <div className='CardDiv'>
             <div>{todo.value}</div>
            
             <div  className='card' style={{marginLeft:"20px",width:"220px",marginTop:"30px",textAlign:"center",padding:"10px"}}>
@@ -56,7 +60,7 @@ useEffect(()=>{
         <p>{todo.price} €</p>
         <div style={{width:"140px"}} onClick={()=>handleDelete(todo.id)} className='btn GreebBTN'>DELETE</div>
          
-        <div style={{marginTop:"10px"}} onClick={Pocket} className='btn GreebBTN'>IN THE POCKET</div>
+        {/* <div style={{marginTop:"10px"}} onClick={Pocket} className='btn GreebBTN'>IN THE POCKET</div> */}
       </div>
     </div>
            
@@ -65,11 +69,16 @@ useEffect(()=>{
 
        </div>
        <div>
+
+        <div>{total}</div>
             <hr />
             <Visit/>
             <FooterPage/>
           </div>
+
+
   </div>
+
   )
 }
 

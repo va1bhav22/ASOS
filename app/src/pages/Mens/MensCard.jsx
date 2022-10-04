@@ -3,7 +3,7 @@ import './Mens.css'
 import { useNavigate } from "react-router-dom";
 const MensCard = (props) => {
 
-  console.log(props)
+  // console.log(props)
   const navigate=useNavigate()
   const handClick=()=>{
     navigate("/MensProduct")

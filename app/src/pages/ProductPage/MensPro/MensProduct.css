@@ -8,11 +8,13 @@
 }
 
 .ADDTOCART{
-  background-color: aliceblue;
+  background-color: #018849 ;
   font-weight: bold;
+  color: white;
+  border-radius: 0%;
 }
 
 .ADDTOCART:hover{
   color: white;
-  background-color: black;
+  background-color: #018849;
 }

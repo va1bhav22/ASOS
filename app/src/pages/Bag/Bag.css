@@ -9,9 +9,14 @@
   color: #fff;
 }
 .CatPageItem{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: auto;
   gap: 30px;
   margin-top: 30px;
   align-items: center;
   
+}
+.card{
+  height: 500px;
 }
