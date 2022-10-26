@@ -16,6 +16,7 @@ const MensProduct = () => {
     let cardData=JSON.parse(localStorage.getItem("DataCard")) || [];
 
     const [todos,setTodos]=useState([]);
+    const[search,setSearch]=useState("")
     useEffect(()=>{
       fetch("https://6325f6a94cd1a2834c47f804.mockapi.io/ASSOSAPIMALE")
       .then((r)=>r.json())
@@ -38,6 +39,28 @@ const MensProduct = () => {
       navigate("/DescPage")
     }
 
+    const handleSort=(s)=>{
+      return setTodos([  
+        ...todos.sort((a, b) => {
+           if (s === "H2l") {
+             return a.price - b.price;
+           } 
+           else if (s === "L2h") {
+             return b.price - a.price;
+           }
+            else return todos;
+         }),
+       ]);
+
+    }
+
+    // const HndleSerch=(e)=>{
+    //   // console.log(e)
+    //   return setTodos([
+        
+    //   ])
+     
+    // }
   
     return (
       <div>
@@ -48,10 +71,10 @@ const MensProduct = () => {
        <Dropdown4/>
        <div className='DropIsStart'>
       <div >
-        <select name="" id="DropDownStart">
+        <select name="" id="DropDownStart" onClick={(e)=>handleSort(e.target.value)} >
           <option value="">Sort By</option>
-          <option value="">High To Low</option>
-          <option value="">Low To High</option>
+          <option value="H2l">High To Low</option>
+          <option value="L2h">Low To High</option>
         </select>
       </div>
       <div>
@@ -64,13 +87,14 @@ const MensProduct = () => {
         </select>
       </div>
       <div>
-        <select name="" id="DropDownStart">
+        {/* <select name="" id="DropDownStart">
           <option value="">Brand</option>
           <option value="">ASOS DESIGN(5.063)</option>
           <option value="">ASOS 4505(73)</option>
           <option value="">ASOS EDITION(2)</option>
           <option value="">ASOS MADE IN(4)</option>
-        </select>
+        </select> */}
+        <input type="text" id='searchpro' onChange={(e)=>setSearch(e.target.value)} placeholder="Search Product" />
       </div>
       <div>
         <select name="" id="DropDownStart">
@@ -84,7 +108,20 @@ const MensProduct = () => {
     </div>
        </div>
        <div className='ProductData'>
-       {todos.map((todo)=>(
+       {todos
+       .filter((value)=>
+       {
+        if(search==="")
+        {
+          return value 
+           
+        }
+        else if(value.title.toLowerCase().includes(search.toLowerCase()))
+        {
+          return value
+        }
+       })
+       .map((todo)=>(
          
          <div  onClick={()=>AddDesc(todo)}>
             <div key={todos.id}>{todo.value}</div>

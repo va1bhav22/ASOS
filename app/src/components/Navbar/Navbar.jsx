@@ -3,9 +3,14 @@ import { Link } from 'react-router-dom';
 import MiniNav from './MiniNav';
 import  './Navbar.css';
 import NextNav from './NextNav';
+import { useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleNavigate=()=>{
+    navigate("/")
+  }
   return (
    <div>
      <MiniNav/>
@@ -13,7 +18,7 @@ const Navbar = () => {
      <div>
      <Link to='/'></Link>
       {/* <div><img src="" alt="" /></div> */}
-      <img style={{height:"90px",marginRight:"30px"}} src="https://image.pitchbook.com/uOcUSgJVnsjM1HbMQlkK59pDzkf1605376695731_200x200" alt="" />
+      <img onClick={handleNavigate} style={{height:"90px",marginRight:"30px"}} src="https://image.pitchbook.com/uOcUSgJVnsjM1HbMQlkK59pDzkf1605376695731_200x200" alt="" />
       <Link style={{color:"white",marginRight:"30px",textDecoration:"none",fontSize:"20px"}} to='/Womens'>WOMEN</Link>
       <Link  style={{color:"white",marginRight:"30px",textDecoration:"none",fontSize:"20px"}} to='/Mens'>MEN</Link>
      </div>
