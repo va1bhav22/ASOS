@@ -23,10 +23,13 @@ useEffect(()=>{
     localStorage.setItem("DataCard",JSON.stringify(Data))
     setBackData(cardGet)
   }
-
-    const Pocket=(e)=>{
-      // navigate('/MainCheckOut')
-            
+  //  var arr =JSON.parse(localStorage.getItem("cheeckoutpage")) || [] ;
+    const Pocket=(Payload)=>{
+      
+      console.log(Payload)
+      // arr.push(Payload)
+      localStorage.setItem("cheeckoutpage" ,JSON.stringify(Payload)) 
+      navigate('/MainCheckOut')
     }
 
   return (
@@ -50,17 +53,17 @@ useEffect(()=>{
 {backData.map((todo)=>(
           <div className='CardDiv'>
             <div>{todo.value}</div>
-           
             <div  className='card' style={{marginLeft:"20px",width:"220px",marginTop:"30px",textAlign:"center",padding:"10px"}}>
       <div>
         <img style={{width:"200px",marginLeft:"0px"}} src={todo.imgu} alt="" />
       </div>
+           
       <div>
         <p style={{fontSize:"13px",marginTop:"10px"}}>{todo.title}</p>
         <p>{todo.price} €</p>
         <div style={{width:"140px"}} onClick={()=>handleDelete(todo.id)} className='btn GreebBTN'>DELETE</div>
          
-        {/* <div style={{marginTop:"10px"}} onClick={Pocket} className='btn GreebBTN'>IN THE POCKET</div> */}
+        <div style={{marginTop:"10px"}} onClick={()=>Pocket(todo)} className='btn GreebBTN'>IN THE POCKET</div>
       </div>
     </div>
            

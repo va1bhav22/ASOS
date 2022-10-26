@@ -43,10 +43,10 @@ const MensProduct = () => {
       return setTodos([  
         ...todos.sort((a, b) => {
            if (s === "H2l") {
-             return a.price - b.price;
+             return b.price - a.price;
            } 
            else if (s === "L2h") {
-             return b.price - a.price;
+             return a.price - b.price;
            }
             else return todos;
          }),
@@ -60,9 +60,9 @@ const MensProduct = () => {
         
     //   ])
      
-    // }
-  
+    
     return (
+    // }
       <div>
        <div>
        <Dropdowns/>
