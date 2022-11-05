@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { descDarta } from './menddesData';
 import './DesFooterCards.css'
 import Form from 'react-bootstrap/Form';
@@ -8,16 +8,18 @@ import './desc.css'
 import DesFooterCards from './DesFooterCards';
 import Visit from '../Visit/Visit';
 import FooterPage from '../Footer/Footer';
+import { CrtContext } from '../../Context';
 const Disccard = ({data}) => {
-    let cardData=JSON.parse(localStorage.getItem("DataCard")) || [];
+    const {crtdata,setCrtdata} = useContext(CrtContext)
+    // let cardData=JSON.parse(localStorage.getItem("DataCard")) || [];
 
 
-    const AddTocart=(payload)=>{
+    // const AddTocart=(payload)=>{
        
-      cardData.push(payload)
-      localStorage.setItem("DataCard" ,JSON.stringify(cardData))
+    //   cardData.push(payload)
+    //   localStorage.setItem("DataCard" ,JSON.stringify(cardData))
     
-    }
+    // }
   return (
     <>
     <div className='MainContainerDesc'>
@@ -61,7 +63,7 @@ const Disccard = ({data}) => {
                             </div>
 
                             <div className='btnheartDiv'>
-                               <div className='btn ADDTOCART'  onClick={()=>AddTocart(data)} >ADD TO CART</div>  
+                               <div className='btn ADDTOCART'  onClick={()=>{  setCrtdata([...crtdata,data])}}>ADD TO CART</div>  
                                <div  className='HeartIcon'><i class="fa-regular fa-heart"></i></div>
                             </div> 
                             

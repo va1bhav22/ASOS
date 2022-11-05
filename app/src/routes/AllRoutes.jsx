@@ -31,7 +31,7 @@ const AllRoutes = () => {
         <Route path='/WomensProduct' element={<WomensProduct/>} />
         <Route path='/CheckOutDetails'element={<CheckOutDetails/>} />
         <Route path='/MainCheckOut' element={<MainCheckOut/>}/>
-        <Route path='/DescPage' element={<Discpage/>}/>
+        <Route path='/DescPage/:id' element={<Discpage/>}/>
       </Routes>
     </div>
   )

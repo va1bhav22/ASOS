@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import MiniNav from './MiniNav';
 import  './Navbar.css';
 import NextNav from './NextNav';
 import { useNavigate } from "react-router-dom";
+import { CrtContext } from '../../Context';
 
 
 const Navbar = () => {
+  const {crtdata} = useContext(CrtContext)
   const navigate = useNavigate();
   const handleNavigate=()=>{
     navigate("/")
@@ -24,14 +26,14 @@ const Navbar = () => {
      </div>
       
       <div className="inputicon">
-        <input className='NavInput' type="text" placeholder='Search for items and brands' /><i  class="fa-solid fa-magnifying-glass"></i>
+        <input className='NavInput' type="text" placeholder='Search for items and brands' /><i  className="fa-solid fa-magnifying-glass"></i>
         </div>
       
       <div style={{marginLeft:"-30px"}}>
-      {/* <Link  to='/Sign'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} class="fa-solid fa-user"></i></Link> */}
-      <Link  to='/Signup'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} class="fa-solid fa-user"></i></Link>
-      <Link to='/Save'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} class="fa-solid fa-heart"></i></Link>
-      <Link to='/Bag'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} class="fa-solid fa-bag-shopping"></i></Link> 
+      {/* <Link  to='/Sign'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} className="fa-solid fa-user"></i></Link> */}
+      <Link  to='/Signup'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} className="fa-solid fa-user"></i></Link>
+      <Link to='/Save'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} className="fa-solid fa-heart"></i></Link>
+      <Link to='/Bag'><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} className="fa-solid fa-bag-shopping"></i><span style={{color:"white",fontSize:"25px",textDecoration:"none"}}>{crtdata.length}</span></Link> 
       </div>
     </div>
     <NextNav/>

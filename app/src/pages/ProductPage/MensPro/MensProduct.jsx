@@ -1,24 +1,24 @@
 import React from 'react';
 import FooterPage from '../../Footer/Footer';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Visit from '../../Visit/Visit';
 import Dropdowns, { Dropdown2, Dropdown3, Dropdown4 } from '../WomensPro/Dropdowns';
 import '../WomensPro/DropDown.css'
 import{ useEffect, useState } from 'react';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import { nanoid } from 'nanoid';
 import './MensProduct.css'
 const MensProduct = () => {
 
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
   
     
-    let cardData=JSON.parse(localStorage.getItem("DataCard")) || [];
+    // let cardData=JSON.parse(localStorage.getItem("DataCard")) || [];
 
     const [todos,setTodos]=useState([]);
     const[search,setSearch]=useState("")
     useEffect(()=>{
-      fetch("https://6325f6a94cd1a2834c47f804.mockapi.io/ASSOSAPIMALE")
+      fetch("https://assosapi.herokuapp.com/mensData")
       .then((r)=>r.json())
       .then((d)=>{
         // console.log(d)
@@ -31,13 +31,13 @@ const MensProduct = () => {
     //   cardData.push(Payload)
     //   localStorage.setItem("DataCard" ,JSON.stringify(cardData))
     // }
-    const AddDesc=(Payload)=>{
-      console.log(Payload)
-      cardData=[];
-      cardData.push(Payload)
-      localStorage.setItem("DataCard" ,JSON.stringify(cardData)) 
-      navigate("/DescPage")
-    }
+    // const AddDesc=(Payload)=>{
+    //   console.log(Payload)
+    //   cardData=[];
+    //   cardData.push(Payload)
+    //   localStorage.setItem("DataCard" ,JSON.stringify(cardData)) 
+    //   navigate("/DescPage")
+    // }
 
     const handleSort=(s)=>{
       return setTodos([  
@@ -122,8 +122,9 @@ const MensProduct = () => {
         }
        })
        .map((todo)=>(
-         
-         <div  onClick={()=>AddDesc(todo)}>
+         <Link to={`/DescPage/${todo.id}`}>
+         <div > 
+         {/* onClick={()=>AddDesc(todo)} */}
             <div key={todos.id}>{todo.value}</div>
            
              <div>
@@ -140,7 +141,7 @@ const MensProduct = () => {
   
            
           </div>  
-                
+            </Link>
         ))}
        </div>
 

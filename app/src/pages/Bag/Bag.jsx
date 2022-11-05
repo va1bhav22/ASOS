@@ -1,27 +1,30 @@
 import React from 'react'
+import { useContext } from 'react';
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import { CrtContext } from '../../Context';
 import FooterPage from '../Footer/Footer'
 import Visit from '../Visit/Visit'
 import './Bag.css'
 const Bag = () => {
+  const {crtdata,setCrtdata} = useContext(CrtContext)
   const navigate=useNavigate()
-const  [backData,setBackData]=useState([])
-  const cardGet=JSON.parse(localStorage.getItem("DataCard"))
+// const  [backData,setBackData]=useState([])
+  // const cardGet=JSON.parse(localStorage.getItem("DataCard"))
   const [total, setTotal] = useState(0);
  
-useEffect(()=>{
-  setBackData(cardGet)
-},[])
+// useEffect(()=>{
+//   setBackData(cardGet)
+// },[])
 
 
   const handleDelete=(id)=>{
     // console.log(id)
       // event.preventDefault()
-    const Data=cardGet.filter(el=>el.id!==id)
-    localStorage.setItem("DataCard",JSON.stringify(Data))
-    setBackData(cardGet)
+    // const Data=cardGet.filter(el=>el.id!==id)
+    // localStorage.setItem("DataCard",JSON.stringify(Data))
+    // setBackData(cardGet)
   }
   //  var arr =JSON.parse(localStorage.getItem("cheeckoutpage")) || [] ;
     const Pocket=(Payload)=>{
@@ -50,8 +53,8 @@ useEffect(()=>{
       </div>
     </div>
      <div className='CatPageItem'>
-{backData.map((todo)=>(
-          <div className='CardDiv'>
+{crtdata.map((todo)=>(
+          <div className='CardDiv' key={todo.id}>
             <div>{todo.value}</div>
             <div  className='card' style={{marginLeft:"20px",width:"220px",marginTop:"30px",textAlign:"center",padding:"10px"}}>
       <div>
@@ -61,7 +64,7 @@ useEffect(()=>{
       <div>
         <p style={{fontSize:"13px",marginTop:"10px"}}>{todo.title}</p>
         <p>{todo.price} €</p>
-        <div style={{width:"140px"}} onClick={()=>handleDelete(todo.id)} className='btn GreebBTN'>DELETE</div>
+        <div style={{width:"140px"}} onClick={()=>setCrtdata(crtdata.filter((c)=>c.id!==todo.id))} className='btn GreebBTN'>DELETE</div>
          
         <div style={{marginTop:"10px"}} onClick={()=>Pocket(todo)} className='btn GreebBTN'>IN THE POCKET</div>
       </div>
