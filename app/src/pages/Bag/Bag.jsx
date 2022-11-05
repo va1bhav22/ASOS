@@ -14,18 +14,23 @@ const Bag = () => {
   // const cardGet=JSON.parse(localStorage.getItem("DataCard"))
   const [total, setTotal] = useState(0);
  
+
+  useEffect((item)=>{
+    setTotal(crtdata.reduce((acc,curr)=>acc+Number(curr.price),0));
+  },[crtdata])
+  console.log(crtdata)
 // useEffect(()=>{
 //   setBackData(cardGet)
 // },[])
 
 
-  const handleDelete=(id)=>{
+  // const handleDelete=(id)=>{
     // console.log(id)
       // event.preventDefault()
     // const Data=cardGet.filter(el=>el.id!==id)
     // localStorage.setItem("DataCard",JSON.stringify(Data))
     // setBackData(cardGet)
-  }
+  // }
   //  var arr =JSON.parse(localStorage.getItem("cheeckoutpage")) || [] ;
     const Pocket=(Payload)=>{
       
@@ -76,7 +81,7 @@ const Bag = () => {
        </div>
        <div>
 
-        <div>{total}</div>
+        <div className='total' ><h3>TOTAL  {total}</h3></div>
             <hr />
             <Visit/>
             <FooterPage/>

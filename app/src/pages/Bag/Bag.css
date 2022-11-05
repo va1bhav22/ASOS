@@ -20,3 +20,10 @@
 .card{
   height: 500px;
 }
+.total{
+  display: flex;
+  width: 97%;
+  justify-content: flex-end;
+  /* border: 2px solid gray; */
+  
+}
