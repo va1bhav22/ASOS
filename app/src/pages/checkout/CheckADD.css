@@ -1,44 +1,174 @@
-.SelectCountry{
-  width:450px;
-  height: 100px;
-  background-color: white;
-  /* text-align: center; */
-  padding: 10px 0px 0px 32px;
+.MainDiv{
+  justify-content: center;
+  gap: 20px;
 }
-.AddressDEl{
-  width:450px;
-  height: 1100px;
+
+.CountryDiv{
+  width: 600px ;
+  background-color: white;
+  height: 100px;
+  padding: 10px;
+  
+}
+
+.CountryDiv> div {
+  margin-left: 100px;
+}
+
+#country{
+  width: 350px;
+  height: 40px;
+  margin-top: 5px;
+}
+.countryName{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ADDDetails{
+  width: 600px ;
   background-color: white;
   margin-top: 10px;
-  
-  /* text-align: center; */
-  padding: 4px 0px 0px 32px;
+  padding: 10px 10px 30px 10px;
 }
-.AddressDEl>div{
-  margin-top: 40px;
-}
+
 .DEVinput{
   width: 350px;
   height: 40px;
-  border-radius: 0%;
+  border-radius: 0px;
+  border-width: thin;
+  border-color: lightgray;
+}
+
+.ADDDetails > div{
+  margin-left: 100px;
+  margin-top: 9px;
+}
+
+.CheckName{
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.LastBtn{
+ width: 600px;
+ height: 60px;
+ padding-top: 15px;
+ background-color:#018849;
+ border-radius: 0px;
+ margin-top: 16px;
+ color: white;
+ font-size: 22px;
+ font-weight: bold;
+}
+.pbtn{
+  margin-top: 5px;
+}
+
+.ADDCART{
+  display: flex;
+  gap:21px;
+  width: 240px;
+  padding: 6px;
+  font-weight: 400;
+  justify-content: center;
+  border: 3px solid gray;
+  cursor: pointer;
+}
+.fa-cc-paypal{
+  /* margin-top: 15px; */
+  font-size: 18px;
+}
+.PAYPAL{
+  display: flex;
+  gap:21px;
+  width: 240px;
+  padding: 6px;
+  font-weight: 400;
+  justify-content: center;
+  border: 3px solid gray;
+  cursor: pointer;
+  align-items: center;
+  height: 60px;
   margin-top: 10px;
 }
-.CheckName{
+
+.fa-credit-card{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.or{
+  font-size: 20px;
   font-weight: bold;
+  width: 240px;
+  text-align: center;
+  margin-top: 10px;
   color: gray;
 }
-.LastBtn{
-  background-color:#018849; ;
-  margin-top: 20px;
-  padding: 15px;
-  /* margin-left: 80px; */
-  font-weight: bold;
-  border-radius: 0%;
-  color: white;
-  width: 450px;
+
+.cardToggleDiv>div{
+  margin-top: 15px;
 }
 
+.DEVinputccv{
+  width: 140px;
+  height: 40px;
+  border-radius: 0px;
+  border-width: thin;
+}
+.headADDDebit{
+  font-size: 24px;
+  font-style:serif;
+font-weight: 600;
+}
 
-.checkoutCards{
-  display: flex;
+input.chek{
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+#month{
+ width: 120px;
+ height: 40px;
+ border-radius: 0px;
+  border-width: thin;
+  padding: 0px 4px 0px 4px;
+}
+#year{
+  padding: 0px 4px 0px 4px;
+  width: 90px;
+  height: 40px;
+  border-radius: 0px;
+  border-width: thin;
+ }
+.cardnumbericon{
+  position: absolute;
+  margin-left: 320px;
+  font-size:20px;
+}
+
+.iconinput{
+  position: absolute;
+  margin-left: 110px;
+  font-size:20px;
+
+}
+.otpbox{
+  width: 34px;
+}
+
+.useCRD:hover{
+  color: whitesmoke;
+}
+
+.useCRD{
+  width: 200px;
+  color: white;
+  font-weight: 700;
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #2d2d2d ;
 }
