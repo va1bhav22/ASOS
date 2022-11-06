@@ -23,6 +23,9 @@ const Bag = () => {
 //   setBackData(cardGet)
 // },[])
 
+const maincheck=()=>{
+  navigate('/CheckOutDetails')
+}
 
   // const handleDelete=(id)=>{
     // console.log(id)
@@ -57,31 +60,100 @@ const Bag = () => {
           </div>
       </div>
     </div>
-     <div className='CatPageItem'>
-{crtdata.map((todo)=>(
-          <div className='CardDiv' key={todo.id}>
-            <div>{todo.value}</div>
-            <div  className='card' style={{marginLeft:"20px",width:"220px",marginTop:"30px",textAlign:"center",padding:"10px"}}>
-      <div>
-        <img style={{width:"200px",marginLeft:"0px"}} src={todo.imgu} alt="" />
-      </div>
-           
-      <div>
-        <p style={{fontSize:"13px",marginTop:"10px"}}>{todo.title}</p>
-        <p>{todo.price} €</p>
-        <div style={{width:"140px"}} onClick={()=>setCrtdata(crtdata.filter((c)=>c.id!==todo.id))} className='btn GreebBTN'>DELETE</div>
-         
-        <div style={{marginTop:"10px"}} onClick={()=>Pocket(todo)} className='btn GreebBTN'>IN THE POCKET</div>
-      </div>
-    </div>
-           
-          </div>        
-        ))}
+   
 
+
+
+        <div className='MainDivCart' style={{background:"#F2F5F8 "}}>
+
+        <div className='CatPageItem'>
+              {crtdata.map((todo)=>(
+                <div className='CardDiv' key={todo.id}>
+                  <div><img className='cardDivimg' src={todo.imgu} alt="" /></div>  
+                  <div>
+                       <div><h5 style={{color:"#d01345"}}>£{todo.price}</h5></div>
+                       <div><p className='CartTitle'>{todo.title}</p></div>
+                       <div>
+                          | <span>
+                            <select name="" id="size">
+                              <option value="">Size</option>
+                              <option value="">M</option>
+                              <option value="">L</option>
+                              <option value="">XL</option>
+                              <option value="">2XL</option>
+                             
+                            </select> |
+                          </span> &nbsp; &nbsp;
+                          <span> 
+                          <select name="" id="qty">
+                              <option value="">Qty</option>
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                              <option value="">6</option>
+                              <option value="">7</option>
+                              <option value="">8</option>
+                              <option value="">9</option>
+                            </select> |
+                          </span>
+                       </div>
+                         
+                        <div className='savebtn'>
+                          <span><i class="fa-regular fa-heart king"></i></span> &nbsp;
+                          <span>Save for later</span>
+                        </div>
+                  </div>  
+
+                  <div>
+                  <i class="fa-solid fa-xmark" onClick={()=>{setCrtdata(crtdata.filter((c)=>c.id!==todo.id))}}></i>
+                  </div>                
+                </div>        
+              ))}
+        <div className='total' ><h3>SUB-TOTAL  £{Math.ceil(total)} </h3></div>
        </div>
+
+       <div>
+       <div style={{marginTop:"20px"}}>
+     <div className='CheckMaindiv' style={{padding:"20px",width:"400px",height:"460px",background:"white"}}>
+          <div>
+            <div className='TOTAL'>TOTAL</div>
+            <hr />
+            <div>
+              <div style={{display:"flex",justifyContent:"space-between"}}><p>Sub-Total</p><p>£ {Math.ceil(total)}</p></div>
+              <div style={{display:"flex",justifyContent:"space-between"}}><p>Delivery</p><div style={{color:"gray"}}><i class="fa-solid fa-circle-info"></i></div></div>
+            </div>
+            <select name="" id="standDeli">
+              
+              <option value="">Standerd Delivery (Free)</option>
+              <option value="">Expres Delivery (£ 22.50) </option>
+            </select>
+            <hr />
+            <div className='btn REGISTER' onClick={maincheck}>CASH REGISTER</div>
+            <div>
+              <p style={{fontSize:"14px",marginTop:"20px"}}>WE ACCEPT:</p>
+          
+              <div>
+              <img style={{width:"280px"}} src="https://assets.asosservices.com/asos-finance/images/marketing/fr/single.png" alt="" />
+              </div>
+              
+              <p style={{fontSize:"15px",marginTop:"20px"}}>Do you have a discount code? Add it in the next step</p>
+            </div>
+          </div>
+        </div>
+     </div>
+       </div>
+
+        </div>
+
+
+
+
+
        <div>
 
-        <div className='total' ><h3>TOTAL  {total}</h3></div>
+        
             <hr />
             <Visit/>
             <FooterPage/>

@@ -1,4 +1,4 @@
-.GreebBTN{
+/* .GreebBTN{
   width: 140px;
   font-size: 14px;
   font-weight: bold;
@@ -14,16 +14,83 @@
   grid-template-rows: auto;
   gap: 30px;
   margin-top: 30px;
-  align-items: center;
+  align-items: center;CardDiv
   
 }
 .card{
   height: 500px;
+} */
+.CartTitle{
+  width: 98%;
+  font-size: 14px;
 }
-.total{
+
+.CardDiv{
+  background-color: white;
+  margin-top: 20px;
+  padding: 25px;
   display: flex;
-  width: 97%;
-  justify-content: flex-end;
-  /* border: 2px solid gray; */
+  justify-content: space-around;
+  gap: 14px;
+  width: 99%;
+}
+
+#size{
+  width: 60px;
+  /* height: 20px; */
+  padding: 1px;
+  border: none;
+ 
+}
+
+#standDeli{
+  width: 360px;
+  height: 40px;
+  border: 0ch;
+}
+
+#qty{
+  border: none;
+}
+
+.cardDivimg{
+  width: 120px;
+
+}
+.fa-xmark{
+  font-size: 20px;
+}
+
+.total{
+  /* display: flex; */
   
+  width:780px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  /* border: 2px solid gray; */
+  display: flex;
+  justify-content: end;
+  
+}
+
+.savebtn{
+  border: 1px solid lightgray;
+  width: 110px;
+  font-size: 13px;
+  padding: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.king{
+  margin-top: 3px;
+  font-size: 13px;
+}
+
+.MainDivCart{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 30px;
 }

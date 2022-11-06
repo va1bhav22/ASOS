@@ -1,14 +1,17 @@
 .SelectCountry{
-  width:500px;
+  width:450px;
   height: 100px;
   background-color: white;
+  /* text-align: center; */
   padding: 10px 0px 0px 32px;
 }
 .AddressDEl{
-  width:500px;
+  width:450px;
   height: 1100px;
   background-color: white;
   margin-top: 10px;
+  
+  /* text-align: center; */
   padding: 4px 0px 0px 32px;
 }
 .AddressDEl>div{
@@ -28,9 +31,14 @@
   background-color:#018849; ;
   margin-top: 20px;
   padding: 15px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   font-weight: bold;
   border-radius: 0%;
   color: white;
-  width: 500px;
+  width: 450px;
+}
+
+
+.checkoutCards{
+  display: flex;
 }

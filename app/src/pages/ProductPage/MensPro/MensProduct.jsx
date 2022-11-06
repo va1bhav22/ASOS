@@ -122,7 +122,7 @@ const MensProduct = () => {
         }
        })
        .map((todo)=>(
-         <Link to={`/DescPage/${todo.id}`}>
+         <Link style={{textDecoration:"none"}} to={`/DescPage/${todo.id}`}>
          <div > 
          {/* onClick={()=>AddDesc(todo)} */}
             <div key={todos.id}>{todo.value}</div>
