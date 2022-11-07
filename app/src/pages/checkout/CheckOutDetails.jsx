@@ -1,15 +1,36 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { CrtContext } from '../../Context'
 import FooterPage from '../Footer/Footer'
 import Visit from '../Visit/Visit'
 import './CheckADD.css'
 
 const CheckOutDetails = () => {
+
+  
   const {crtdata,setCrtdata} = useContext(CrtContext);
   const [showText, setShowText] = useState(false);
-  const [showotp, setShowotp] = useState(false);
+  // const [showotp, setShowotp] = useState(false);
+
+  const [total, setTotal] = useState(0);
+ 
+
+  useEffect((item)=>{
+    setTotal(crtdata.reduce((acc,curr)=>acc+Number(curr.price),0));
+  },[crtdata])
+  console.log(crtdata)
+
+  const navigate=useNavigate()
+
+  const navigateotp=()=>{
+    navigate('/otp')
+  }
   return (
     <div style={{background:"#F2F5F8"}}>
+      <div className='HeadingCheckOut'>
+        <div>ASSOS</div>
+        <div>CHECKOUT</div>
+      </div>
         <div className='MainDiv' style={{display:"flex"}}>
                <div className='FirstRow'>
                    <div className='CountryDiv'>
@@ -167,12 +188,13 @@ const CheckOutDetails = () => {
                                           </div>
                                     </div>
 
-                                
+                                    {/* <form action=""> */}
                                     <div style={{marginTop:"40px"}} >
                                     {
                                       
                                     
                                     showText && <div className='cardToggleDiv'>
+                                      
                                           <div className='headADDDebit'>ADD CREDIT/DEBIT CARD</div>
 
                                             <div>
@@ -180,13 +202,13 @@ const CheckOutDetails = () => {
 
                                               <div>
                                               <i class="cardnumbericon fa-solid fa-credit-card"></i>
-                                                <input className='DEVinput' type="text" /></div>
+                                                <input maxLength={"12"} style={{fontWeight:"bold",paddingLeft:"10px"}}  required className='DEVinput' type="number" /></div>
                                             </div>
 
                                             <div>
                                             <div className='CheckName'>EXPIRY DATE </div>
                                                   <div>
-                                                        <span><select name="" id="month">
+                                                        <span><select required name="" id="month">
                                                           <option value="">Month</option>
                                                           <option value="">01</option>
                                                           <option value="">02</option>
@@ -201,7 +223,7 @@ const CheckOutDetails = () => {
                                                           <option value="">11</option>
                                                           <option value="">12</option>
                                                           </select></span> &nbsp; &nbsp;
-                                                        <span><select name="" id="year">
+                                                        <span><select required name="" id="year">
                                                             <option value="">Year</option>
                                                             <option value="">2022</option>
                                                             <option value="">2023</option>
@@ -220,7 +242,7 @@ const CheckOutDetails = () => {
 
                                             <div>
                                               <div className='CheckName'> NAME OF CARD </div>
-                                              <div><input className='DEVinput' type="text" /></div>
+                                              <div><input style={{fontWeight:"bold",paddingLeft:"10px"}} className='DEVinput' type="text" /></div>
                                             </div>
 
                                             <div>
@@ -228,7 +250,7 @@ const CheckOutDetails = () => {
 
                                               <div>
                                               <i class="iconinput fa-regular fa-credit-card"></i>
-                                                <input className='DEVinputccv' type="text" /></div>
+                                                <input maxLength={"3"} required className='DEVinputccv' type="password" /></div>
                                             </div>
 
                                             <div style={{display:"flex",alignItems:"center"}}>
@@ -237,18 +259,19 @@ const CheckOutDetails = () => {
                                             </div>
 
                                             <div>
-                                              <button className='btn useCRD' >USE THIS CARD</button>
+                                              <button onClick={navigateotp} className='btn useCRD' >USE THIS CARD</button>
                                             </div>
 
-
+                                            
                                       </div>
+                                      
                                       
                                       }
 
 
                                       
                                     </div>
-
+{/* </form> */}
                       </div>
                       <div style={{marginTop:"15px"}} >
                             <div style={{width:"600px"}}>By placing your order, you accept our Terms and Conditions , our Privacy Policy and our Returns Policy . You also agree that some of your data will be stored by ASOS. These can be used to make your shopping experience even better in the future.</div>
@@ -257,17 +280,38 @@ const CheckOutDetails = () => {
                        </div>
              </div>
              <div className='secondRow'>
-              <h1>ITEM {crtdata.length}</h1>
+              <div className='itemCheckData'><h3>ITEM </h3> <h3> {crtdata.length}</h3></div>
+                    <div className='scroleEvent'>
                     {crtdata.map((ele)=>{
-                          return  <div>
+                          return  <div className='datailscard'>
                             
                             <hr />
-                            <div>
-                              <div></div>
-                              <div></div>
-                            </div>
+                              <div className='carddatails'>
+                                <div><img style={{width:"100px"}} src={ele.imgu} alt="" /></div>
+                                <div>
+                                  <div style={{color:"#d01345"}}>£ {ele.price}</div>
+                                  <div style={{width:"220px",fontSize:"14px",color:"gray"}}>{ele.title}</div>
+                                  <div></div>
+                                </div>
+                              </div>
                           </div>
                         })}
+                    </div>
+
+                        <div className='lastTotalANDsub'>
+                           <div className='lastTotalANDsubinnerdiv' >
+                               <div>Subtotal</div>
+                               <div style={{color:"#d01345"}}>£ {Math.ceil(total)}</div>
+                           </div>
+                           <div className='lastTotalANDsubinnerdiv' >
+                               <div>Delivery</div>
+                               <div>Free</div>
+                           </div>
+                           <div className='lastTotalANDsubinnerdiv' style={{fontSize:"20px",fontWeight:"bold"}} >
+                               <div>TOTAL TO PAY</div>
+                               <div style={{color:"#d01345"}}>£ {Math.ceil(total)}</div>
+                           </div>
+                        </div>
              </div>
              <br />
         </div>

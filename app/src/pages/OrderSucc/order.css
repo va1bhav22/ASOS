@@ -1,0 +1,39 @@
+.orderMainDiv{
+    width: 100%;
+    height: 400px;
+    margin-top: 90px;
+    background-color: #f7fafc;
+}
+
+.orderMainDivunder{
+    height: 400px;
+    width: 550px;
+    text-align: center;
+    /* background-color: gray; */
+    margin: auto;
+}
+
+.Cirfill{
+    width: 100px;
+   
+}
+
+.orhead{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.orderp{
+   font-size: 1.3rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.orderBtn{
+    background-color: lightblue;
+    color: black;
+    padding: 8px;
+    font-weight: bold;
+    width: 120px;
+}
+
