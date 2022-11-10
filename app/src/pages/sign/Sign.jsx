@@ -30,22 +30,26 @@ export const Signin = ()=>{
     const check = async ()=>{
         const data = await fetch("https://login-backend1.herokuapp.com/users").then((d)=>d.json());
         console.log(data)
-        data.map((e)=>{
-            
-            if(e.email === formdata.email && e.password === formdata.pass){
-                identity = e.first_name
-                alert("LOGIN SUCCESS")
-                navigate("/")
-                // navigate("/Sign")
-            }
-            else{
-                setFlag(!flag)
-                
-            }
-            
-            
+        const userExist = data.find((item)=>item.email===formdata.email && item.password===formdata.pass )
+        if(userExist){
+      
+            alert("LOGIN SUCCESS")
+            navigate("/")
+           }
+           else{
+            setFlag(!flag)
+           }
 
-        })
+        // if(e.email === formdata.email && e.password === formdata.pass){
+        //     identity = e.first_name
+        //     alert("LOGIN SUCCESS")
+        //     navigate("/")
+        //     // navigate("/Sign")
+        // }
+        // else{
+        //     setFlag(!flag)
+            
+        // }
     }    
            
         

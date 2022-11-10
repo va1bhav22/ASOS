@@ -1,0 +1,200 @@
+.firstDrop{
+    position: relative;
+}
+
+.UnsderFirstDrop{
+    position: absolute;
+    display: none;
+}
+
+.firstDrop:hover .UnsderFirstDrop{
+    display: block;
+    background-color: #eee;
+    /* border: 2px solid red; */
+    width: 1300px;
+    margin-left: -63px;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.DeropText{
+    margin-left: 30px;
+    /* margin-top: 11px; */
+    display: flex;
+    
+    gap: 100px;
+
+}
+.DropImg{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    /* border: 1px solid red; */
+}
+.DropImg div{
+    /* margin-left: 30px; */
+}
+.productList{
+    margin-top: 11px;
+}
+
+
+.productList div{
+    margin-top: 8px;
+    color: gray;
+    font-size: 14px;
+}
+
+
+
+.productList div:hover{
+  color: lightblue;
+}
+
+.dropHead{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.imgCardDrop{
+    /* text-align: center; */
+    /* padding: 2px; */
+    border: 1px solid lightgray;
+    position: relative;
+    
+}
+
+.dropCardName{
+    position: absolute;
+    margin-top: -30px;
+    /* margin-left: 33px; */
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgba(238, 238, 238,0.3);
+    width: 100%;
+    height: 40px;
+
+}
+
+.imgCardDrop:hover{
+    /* padding: 3px; */
+    border-color:  #0770cf ;
+   
+}
+
+
+
+.secDropDownoneDetails{
+    display: flex;
+    gap: 130px;
+}
+
+.SECDropLi{
+    position: relative;
+}
+
+.secDropDown{
+    position: absolute;
+    display: none;
+    /* display: flex; */
+}
+
+.SECDropLi:hover .secDropDown{
+    display: block;
+    background-color: #eee;
+    width: 1300px;
+    margin-left: -124px;
+    margin-top: 12px;
+    padding: 20px;
+    height: 400px;
+}
+
+.secDropDownoneDetails div div{
+    margin-top: 9px;
+    font-size: 14px;   
+    color: gray;
+}
+
+.secDropDownoneDetails div div:hover{
+    color: #0770cf;
+}
+
+
+.AtoZ{
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+}
+
+.linehr{
+    height: 370px;
+    width: 1px;
+    border: 1px solid rgb(196, 192, 192);
+    margin-left: 100px;
+}
+
+.secDropDownTwo{
+    display: flex;
+    gap: 20px;
+}
+
+.flexDropDown {
+    display: flex;
+    gap: 20px;
+}
+
+.DropSecimg{
+    border: 1px solid lightgray;
+}
+
+.DropSecimg:hover{
+    border-color: #0770cf ;
+}
+.linehrsec{
+    height: 370px;
+    width: 1px;
+    border: 1px solid rgb(196, 192, 192);
+    
+}
+
+
+
+
+.dropCardNamesec{
+    position: absolute;
+    margin-top: -70px;
+    /* margin-left: 33px; */
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    /* background-color: rgba(238, 238, 238,0.3); */
+    width: 100%;
+    height: 40px;
+
+}
+
+.dropCardNamesec:hover{
+    color: #0770cf;
+}
+
+.imgCardDropsecond{
+    /* text-align: center; */
+    /* padding: 2px; */
+    border: 1px solid lightgray;
+    position: relative;
+    
+}
+
+.imgCardDropsecond:hover{
+    /* padding: 3px; */
+    border-color:  #0770cf ;
+   
+}
+
+.imgCardDropsecond {
+    margin-top: 10px;
+}

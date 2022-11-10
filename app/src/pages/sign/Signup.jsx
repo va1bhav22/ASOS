@@ -7,15 +7,21 @@ import FooterPage from "../Footer/Footer";
 export const Signup = ()=>{
   const navigate=useNavigate()
     const [data,setData] = useState({});
+    
     console.log(data)
     const handlechange = (e)=>{
-        const {name,value} = e.target;
 
+        const {name,value} = e.target;
+        
         setData({
             ...data,
             [name]:value
         })
 
+        if(data.first_name===""){
+                alert("ksldlka")
+        }
+        
 
     }
 
@@ -55,30 +61,30 @@ export const Signup = ()=>{
           <div style={{marginLeft:"85px"}}>
           <div >
                 <div className = "adjustREGName">EMAIL ADDRESS:</div>
-                <input className = "RegInput"  name = "email" type = "text"  onChange = {handlechange} />
+                <input className = "RegInput"  name = "email" type = "text" required    onChange = {handlechange} />
             </div>
             
             <div>
                 <div className = "adjustREGName">FIRST NAME:</div>
-                <input className = "RegInput" name = "first_name" type = "text"   onChange = {handlechange}/>
+                <input className = "RegInput" name = "first_name" type = "text" required  onChange = {handlechange}/>
             </div>
 
            <div>
            <div className = "adjustREGName">LAST NAME:</div>
-            <input className = "RegInput" name = "last_name"type = "text"  onChange = {handlechange}/>
+            <input className = "RegInput" name = "last_name"type = "text" required onChange = {handlechange}/>
            </div>
 
            <div>
            <div className = "adjustREGName">PASSWORD:</div>
             <input className = "RegInput" name = "password" type = "text"  onChange = {handlechange}/>
            </div>
-
+{/* clinquant-dasik-d418a1 */}
             <div>
             <div className = "adjustREGName">DATE OF BIRTH:</div>
             <input className = "RegInput" name = "date_of_birth" type = "date" onChange = {handlechange} />
             </div>
             <button className = " btn joinASSOS" onClick = {()=>{
-                fetch('https://login-backend1.herokuapp.com/users', {
+                fetch('https://loginvaibha.herokuapp.com/users', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',
@@ -88,8 +94,12 @@ export const Signup = ()=>{
                   alert("REGISTRATION SUCCESSFULL");
                   navigate("/Sign")
             }}>REGISTER WITH ASOS</button>
-            
+            {/* https://login-backend1.herokuapp.com/users */}
           </div>
+
+          <div onClick={()=>{
+             navigate("/sign")
+          }} >...</div>
         </div>
        </div>
        <div>
