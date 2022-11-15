@@ -113,8 +113,8 @@ class Otpinput extends React.Component {
                             <div className='resendOtpp'>
                                    <ResendOTP handelResendClick={() => console.log("Resend clicked")} />
                              </div>
-                          <Link  style={{textDecoration:"none",paddingTop:"10px"}} to={"/order"}  className="btnotp" type="submit">
-                            VERIFY OTP
+                            <Link  style={{textDecoration:"none",paddingTop:"10px"}} to={"/order"}  className="btnotp" type="submit">
+                             VERIFY OTP
                             </Link>
                             </form>
 

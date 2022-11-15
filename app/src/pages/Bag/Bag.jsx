@@ -13,11 +13,11 @@ const Bag = () => {
 // const  [backData,setBackData]=useState([])
   // const cardGet=JSON.parse(localStorage.getItem("DataCard"))
   const [total, setTotal] = useState(0);
- 
+ const [qtyp,setQtype]=useState(1)
 
   useEffect((item)=>{
-    setTotal(crtdata.reduce((acc,curr)=>acc+Number(curr.price),0));
-  },[crtdata])
+    setTotal(crtdata.reduce((acc,curr)=>acc+Number(curr.price*qtyp),0));
+  },[crtdata,qtyp])
   console.log(crtdata)
 // useEffect(()=>{
 //   setBackData(cardGet)
@@ -85,17 +85,17 @@ const maincheck=()=>{
                             </select> |
                           </span> &nbsp; &nbsp;
                           <span> 
-                          <select name="" id="qty">
+                          <select name="" id="qty" onChange={(e)=>setQtype(e.target.value)}>
                               <option value="">Qty</option>
-                              <option value="">1</option>
-                              <option value="">2</option>
-                              <option value="">3</option>
-                              <option value="">4</option>
-                              <option value="">5</option>
-                              <option value="">6</option>
-                              <option value="">7</option>
-                              <option value="">8</option>
-                              <option value="">9</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
                             </select> |
                           </span>
                        </div>

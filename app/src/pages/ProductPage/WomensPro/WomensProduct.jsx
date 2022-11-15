@@ -10,7 +10,7 @@ const WomensProduct = () => {
 
   const [todos,setTodos]=useState([]);
   useEffect(()=>{
-    fetch("https://6325f6a94cd1a2834c47f804.mockapi.io/ASSOSWOMWN")
+    fetch("https://6325f6a94cd1a2834c47f804.mockapi.io/ASSOSWOMWN?limit=10")
     .then((r)=>r.json())
     .then((d)=>{
         console.log(d)
