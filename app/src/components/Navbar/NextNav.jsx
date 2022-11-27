@@ -24,14 +24,14 @@ const NextNav = () => {
                            </div>
                         
                     </div>
-                    <div style={{width:"2px",height:"300px",background:"gray"}}> </div>
+                    <div className='EmptyDiv'> </div>
 
                     <div>
-                         {/* <div>NEW EDITS</div> */}
+                         
                          <div className='DropImg'>
                                <div className='imgCardDrop'>
                                   <div>
-                                  <img  style={{width:"220px"}} src="https://images.asos-media.com/products/asos-design-borg-puffer-jacket-in-sage-green/202454416-1-lightgreen?$n_320w$&wid=317&fit=constrain" alt="" />
+                                  <img  className='DrapThreeImg' src="https://images.asos-media.com/products/asos-design-borg-puffer-jacket-in-sage-green/202454416-1-lightgreen?$n_320w$&wid=317&fit=constrain" alt="" />
                                   </div>
                                   <div className='dropCardName'>
                                     ASOS EXCLUSIVES
@@ -40,7 +40,7 @@ const NextNav = () => {
 
                                <div className='imgCardDrop'>
                                   <div>
-                                  <img  style={{width:"220px"}} src="https://images.asos-media.com/products/asos-design-oversized-hoodie-in-black-faux-fur/202755987-1-black?$n_320w$&wid=317&fit=constrain" alt="" />
+                                  <img  className='DrapThreeImg' src="https://images.asos-media.com/products/asos-design-oversized-hoodie-in-black-faux-fur/202755987-1-black?$n_320w$&wid=317&fit=constrain" alt="" />
                                   </div>
                                   <div className='dropCardName'>
                                     TRENDING CLOTH
@@ -49,7 +49,7 @@ const NextNav = () => {
 
                                  <div className='imgCardDrop'>
                                   <div>
-                                  <img  style={{width:"220px"}} src="https://images.asos-media.com/products/asos-dark-future-oversized-hoodie-in-polar-fleece-with-large-back-print-in-black/202507231-1-black?$n_320w$&wid=317&fit=constrain" alt="" />
+                                  <img  className='DrapThreeImg' src="https://images.asos-media.com/products/asos-dark-future-oversized-hoodie-in-polar-fleece-with-large-back-print-in-black/202507231-1-black?$n_320w$&wid=317&fit=constrain" alt="" />
                                   </div>
                                   <div className='dropCardName'>
                                   SELLING FAST

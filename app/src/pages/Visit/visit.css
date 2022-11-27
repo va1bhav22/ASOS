@@ -12,3 +12,57 @@
 .VisitApp:hover{
   border: 1px solid blue;
 }
+
+@media all and (min-width:320px) and (max-width: 480px) {
+  .Visit>div img{
+    width: 20px;
+    
+  }
+  .Visit{
+    display: flex;
+    height: 30px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .VisitApp:hover{
+    border: 1px solid blue;
+  }
+}
+@media all and (min-width:481px) and (max-width: 640px) {
+  .Visit>div img{
+    width: 24px;
+    
+  }
+  .Visit{
+    display: flex;
+    height: 35px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .VisitApp:hover{
+    border: 1px solid blue;
+  }
+  
+}
+@media all and (min-width:641px) and (max-width: 780px) {
+  .Visit>div img{
+    width: 24px;
+    
+  }
+  .Visit{
+    display: flex;
+    height: 35px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .VisitApp:hover{
+    border: 1px solid blue;
+  }
+  
+}
+@media all and (min-width:781px) and (max-width: 998px) {
+  
+}

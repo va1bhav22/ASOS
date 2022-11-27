@@ -1,4 +1,4 @@
-.inputicon i {
+/* .inputicon i {
   position: absolute;
   margin-left: -30px;
   margin-top: 10px;
@@ -11,7 +11,7 @@
   height: 65px;
   background-color: black;
   align-items: center;
-  /* color: white; */
+ 
 }
 .NavInput{
   width: 750px;
@@ -19,4 +19,330 @@
   height: 40px;
   border-radius: 20px;
   border: none;
+} */
+
+*{
+  padding: 0px;;
+  margin: 0px;
 }
+
+.mainNav{
+  width: 100%;
+  height: 4.5rem;
+  display: grid;
+  grid-template-columns:4rem 1fr 2fr 1rem 4fr 1rem 2fr 4rem;
+  background-color: black;
+}
+
+.Logo{
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+  border: 1px solid gray;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  justify-content: center;
+}
+.MenButtons{
+  display: flex;
+  font-weight: bold;
+  color: white;
+
+}
+.MenButtons div{
+  display: flex;
+  justify-content: center;
+  border: 0.1px solid gray;
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  align-items: center;
+  border-top: none;
+  border-bottom: none;
+}
+
+.MenButtons div:active{
+  background-color: gray;
+}
+
+.MenuLink{
+  grid-column: 5/6;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.NavInput{
+  width: 100%;
+  height: 36px;
+  border-radius:20px ;
+  outline-color: skyblue;
+  padding: 0px 30px 0px 20px;
+}
+.FiSearch{
+   position: absolute;
+   margin-left: 5.2in;
+}
+.Icons{
+  grid-column: 7/8;
+  
+  display: flex;
+
+  justify-content: space-around;
+ align-items: center;
+
+}
+
+.IconEdit{
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+
+.hammThreeLines{
+  display: none;
+}
+.NavSearch{
+  display: none;
+}
+
+@media all and (min-width:781px) and (max-width: 998px) {
+  
+  
+.mainNav{
+  width: 100%;
+  height: 4rem;
+  
+}
+
+.Logo{
+ 
+  font-size: 1.4rem;
+   
+}
+.MenButtons{
+  display: flex;
+  font-weight: bold;
+  color: white;
+
+}
+.MenButtons div{
+   font-size: 1rem;
+  }
+
+.MenButtons div:active{
+  background-color: gray;
+}
+
+.MenuLink{
+  grid-column: 5/6;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.NavInput{
+ height: 34px;
+ 
+}
+.FiSearch{
+   
+   margin-left: 3.5in;
+}
+
+
+.IconEdit{
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+}
+
+@media all and (min-width:641px) and (max-width: 780px) {
+   
+.mainNav{
+  width: 100%;
+  height: 4rem;
+  
+}
+.UnicSearch{
+  color: white;
+  font-size: 24px;
+}
+
+.Logo{
+ 
+  font-size: 1.4rem;
+  border: none;
+   
+}
+.MenButtons{
+ display: none;
+}
+.MenButtons div{
+   font-size: 1rem;
+  }
+
+
+.MenuLink{
+  display: none;
+}
+
+.FiSearch{
+   
+   margin-left: 3.5in;
+}
+
+.Icons{
+  gap: 40px;
+}
+.IconEdit{
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+.hammThreeLines{
+  display: block;
+  
+}
+.Hamburger{
+  color: white;
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.FiSearch{
+  color: white;
+}
+.NavSearch{
+  display: block;
+}
+}
+
+@media all and (min-width:320px) and (max-width: 480px) {
+   
+.mainNav{
+  width: 100%;
+  height: 4rem;
+  
+}
+.UnicSearch{
+  color: white;
+  font-size: 24px;
+}
+
+.Logo{
+ 
+  font-size: 1.4rem;
+  border: none;
+   
+}
+.MenButtons{
+ display: none;
+}
+.MenButtons div{
+   font-size: 1rem;
+  }
+
+
+.MenuLink{
+  display: none;
+}
+
+.FiSearch{
+   
+   margin-left: 3.5in;
+}
+
+.Icons{
+  gap: 20px;
+}
+.IconEdit{
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+.hammThreeLines{
+  display: block;
+  
+}
+.Hamburger{
+  color: white;
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.FiSearch{
+  color: white;
+}
+.NavSearch{
+  display: block;
+}       
+}
+@media all and (min-width:481px) and (max-width: 640px) {
+    
+.mainNav{
+  width: 100%;
+  height: 4rem;
+  
+}
+.UnicSearch{
+  color: white;
+  font-size: 24px;
+}
+
+.Logo{
+ 
+  font-size: 1.4rem;
+  border: none;
+   
+}
+.MenButtons{
+ display: none;
+}
+.MenButtons div{
+   font-size: 1rem;
+  }
+
+
+.MenuLink{
+  display: none;
+}
+
+.FiSearch{
+   
+   margin-left: 3.5in;
+}
+
+.Icons{
+  gap: 40px;
+}
+.IconEdit{
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+.hammThreeLines{
+  display: block;
+  
+}
+.Hamburger{
+  color: white;
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.FiSearch{
+  color: white;
+}
+.NavSearch{
+  display: block;
+}
+}
+

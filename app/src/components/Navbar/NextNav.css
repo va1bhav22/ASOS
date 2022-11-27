@@ -14,7 +14,7 @@
 .NextNavul>li:hover{
 background-color:#eee;
 color: black;
-}
+}  
 .NextNavBackChange{
   background-color: #d01345;
   font-weight:bold;
@@ -22,4 +22,51 @@ color: black;
 
 .NextNavBackChange:hover{
   background-color:#eee;
+}
+
+
+@media all and (min-width:320px) and (max-width: 480px) {
+  .MainNextNav{
+    display: none;
+  }
+}
+@media all and (min-width:481px) and (max-width: 640px) {
+  .MainNextNav{
+    display: none;
+  }
+}
+@media all and (min-width:641px) and (max-width: 780px) {
+  .MainNextNav{
+    display: none;
+  }
+}
+@media all and (min-width:781px) and (max-width: 998px) {
+  
+  .NextNavul>li{
+    
+    padding: 10px;
+    font-size: 10px;
+    color:white;
+    cursor:default;
+   
+  }
+  .NextNavul
+  {
+    margin-left: 30px;
+  }
+  
+  .NextNavul>li:hover{
+  background-color:#eee;
+  color: black;
+  }  
+  .NextNavBackChange{
+    background-color: #d01345;
+    font-weight:bold;
+  }
+  
+  .NextNavBackChange:hover{
+    background-color:#eee;
+  }
+  
+
 }

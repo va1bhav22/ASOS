@@ -17,13 +17,13 @@ const navigate=useNavigate()
   }
   return (
     <div>
-      <div style={{display:"flex",background:"#0770cf",color:"white"}}>
-        <div style={{width:"50%",borderRight:"1px solid white",fontSize:"14px",marginTop:"12px",textAlign:"center",lineHeight:"0px",wordSpacing:"3px",fontWeight:"bold"}}>
+      <div className='LandinPageBlueBackData' >
+        <div className='LandinPageBlueBackDataUndrText'>
           <p>UP TO 30% OFF FACE + BODY STUFF!* </p>
           <p>SURPRISE DISCOUNT REVEALEDNAT CHECKOUT </p>
            <p>With code : LUCKY</p>
         </div>
-        <div style={{width:"50%",fontSize:"14px",marginTop:"12px",textAlign:"center",lineHeight:"0px",wordSpacing:"3px",fontWeight:"bold"}}  >
+        <div  className='LandinPageBlueBackDataUndrTextsec'  >
           <p>30% OFF SUMMER SHOES!*</p>
           <p> FROM SNEKS TO SMART STYLES</p>
           <p>With code : DRIP</p>
@@ -31,7 +31,6 @@ const navigate=useNavigate()
       </div>
 
       <div className='LandigBackImg'>
-          {/* <img  src="https://content.asos-media.com/-/media/homepages/unisex/generic-hp/archive/oct-2021/microsoftteams-image-(10).png" alt="" /> */}
           <div className='LandigBackImgUnderData '  >
             <p className='welHead'>Welcome to ASOS</p>
             <p className='welHeadbrand'>ASOS DESIGN and 850+ brands</p>
@@ -46,13 +45,13 @@ const navigate=useNavigate()
 
 
       <div className='PrimiumDelivery'>
-          <div style={{display:"flex",gap: "10px",width:"50%"}}>
-            <div><img style={{marginTop:"10px"}} src='https://content.asos-media.com/-/media/images/components/generic-splash/icons/premier.svg'/></div>
-            <div style={{width:"300px",}}><p>PREMIER DELIVERY</p>
-            <p  style={{marginTop:"-16px",fontSize:"12px"}}>For €15, unlimited free next-day delivery for a whole year</p></div>
+          <div className='PreDeleUndrDiv'>
+            <div><img style={{marginTop:"10px"}} src='https://content.asos-media.com/-/media/images/components/generic-splash/icons/premier.svg' alt='backImg'/></div>
+            <div style={{width:"300px",}}><p className='PremeumParaHed'>PREMIER DELIVERY</p>
+            <p className='PremeumPara'>For €15, unlimited free next-day delivery for a whole year</p></div>
           </div>
-          <div>
-          <p  style={{width:"200px",}}>FREE SHIPPING AND RETURNS</p>
+          <div> 
+          <p className='PremeumParaHed' style={{width:"200px",}}>FREE SHIPPING AND RETURNS</p>
           </div>
       </div>
       

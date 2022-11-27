@@ -3,6 +3,8 @@
   gap: 20px;
   justify-content:end;
   width: 97%;
+  height: 30px;
+  align-items: center;
   
 }
 .Mininav>div:hover{
