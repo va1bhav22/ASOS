@@ -21,6 +21,7 @@ const Discpage = () => {
     },[])
 
     console.log(desc);
+    // clinquant-dasik-d418a1
 
   return (
     <>

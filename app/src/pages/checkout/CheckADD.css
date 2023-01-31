@@ -246,3 +246,11 @@ input.chek{
   justify-content: space-between;
   display: flex;
 }
+
+.DetailsPopup{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: white;
+    padding-top:10px;
+}

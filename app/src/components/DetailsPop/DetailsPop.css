@@ -1,0 +1,29 @@
+.detailsDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.detailsDiv div{
+margin-top: 10px;
+}
+.nameDiv{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.CountryDiv2{
+    color: brown;
+    
+}
+
+.detailsDivbtn{
+    background-color: brown;
+    margin-top: 34px;
+    color: white;
+    width: 160px;
+    font-weight: bold;
+    font-size: 20px;
+}
