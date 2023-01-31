@@ -18,7 +18,7 @@ const MensProduct = () => {
     const [todos,setTodos]=useState([]);
     const[search,setSearch]=useState("")
     useEffect(()=>{
-      fetch("https://assosapi.herokuapp.com/mensData")
+      fetch("https://good-red-crocodile-shoe.cyclic.app/assos")
       .then((r)=>r.json())
       .then((d)=>{
         // console.log(d)
@@ -122,9 +122,9 @@ const MensProduct = () => {
         }
        })
        .map((todo)=>(
-         <Link style={{textDecoration:"none"}} to={`/DescPage/${todo.id}`}>
+         <Link style={{textDecoration:"none"}} to={`/DescPage/${todo._id}`}>
          <div > 
-         {/* onClick={()=>AddDesc(todo)} */}
+
             <div key={todos.id}>{todo.value}</div>
            
              <div>
@@ -132,7 +132,7 @@ const MensProduct = () => {
              <div style={{height:"150px",fontSize:"14px",marginTop:"10px"}}><p >{todo.title} </p>
              <div>
              <div style={{display:"flex"}}><p style={{fontWeight:"bold" , color:"brown"}}>{todo.price} €</p></div>
-             {/* <div className='btn ADDTOCART'onClick={()=>AddTocart(todo)}>ADD TO CART</div>              */}
+                       
              </div>
              </div>
              </div>

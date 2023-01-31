@@ -1,6 +1,6 @@
 .ProductData{
   display:grid;
-  grid-template-columns: repeat(4 ,300px);
+  grid-template-columns: repeat(4 ,1fr);
   gap: 20px;
   justify-content: center;
   margin-top: 50px;
@@ -22,4 +22,44 @@
 #searchpro{
   width: 300px;
   height: 45px;
+}
+
+@media all and (min-width:781px) and (max-width:998px) {
+  .ProductData{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+  
+  }
+  
+  .ADDTOCART{
+    background-color: #018849 ;
+    font-weight: bold;
+    color: white;
+    border-radius: 0%;
+  }
+  
+  .ADDTOCART:hover{
+    color: white;
+    background-color: #018849;
+  }
+  
+  #searchpro{
+    width: 300px;
+    height: 45px;
+  }
+}
+
+
+@media all and (min-width:320px) and (max-width: 480px) {
+        
+}
+@media all and (min-width:481px) and (max-width: 640px) {
+  
+}
+@media all and (min-width:641px) and (max-width: 780px) {
+  
 }

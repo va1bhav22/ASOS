@@ -27,6 +27,9 @@ export const Signin = ()=>{
     
       }
 
+    //   https://determined-gaiters-deer.cyclic.app/user/register
+    // https://login-backend1.herokuapp.com/users
+
     const check = async ()=>{
         const data = await fetch("https://login-backend1.herokuapp.com/users").then((d)=>d.json());
         console.log(data)

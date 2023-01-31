@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   margin-left:50px;
 }
+.MaleMensCard{
+  gap:20px;text-align:center;display:flex;justify-content:center;margin-top:40px;
+}
 .MensBannerImgData{
   margin-left: 450px;
   /* background-color: red; */
@@ -56,7 +59,8 @@ border-radius: 0%;
   background-color:black;
 }
 .TopBrandsImgDiv{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
   justify-content: center;
 }
 .TopBrandsImgDiv>div>img{
@@ -66,4 +70,422 @@ border-radius: 0%;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
+}
+
+.MensMainBanner2{
+display:flex;margin-top:50px;justify-content:center;
+}
+.MensMainBigCards{
+  display:flex;margin-top:40px;justify-content:center;gap:50px;text-align:center;
+}
+/* /////////////////////////////// */
+
+.MenMensFirstBlackInfoDive{
+  display:flex;justify-content:space-around;background:black;align-items:center;
+}
+.MenMensFirstBlackInfoDiveBtn{
+ background:black;color:white;width:100px;border-color:white;font-weight:bold;
+}
+.MenMensFirstBlackInfoDiveBtnsec{
+  background:black;color:white;width:100px;border-color:white;font-weight:bold;
+}
+
+
+
+
+/* /////////////////////////////////media ///////////////////////////////////////////////////////// */
+@media all and (min-width:320px) and (max-width: 480px) {
+        
+.MensBannerImg{
+  background-image: url('https://content.asos-media.com/-/media/homepages/mw/2022/june/06/hero/mw1_dt_hero_1258x600.jpg');
+  height: 300px;
+ 
+  background-size: contain;
+  margin-left:10px;
+}
+.MaleMensCard{
+  gap:20px;text-align:center;display:grid;
+  grid-template-columns: repeat( 1fr);
+  justify-content:center;margin-top:40px;
+}
+.MensBannerImgData{
+  margin-left: 60px;
+  /* background-color: red; */
+  text-align: center;
+  margin-top: 90px;
+ 
+  position: absolute;
+}
+.MensBannerImgData1{
+padding: 3px;
+background-color: white;
+height: 30px;
+width: 100px;
+text-align: center;
+font-size: 13px;
+font-weight: bold;
+margin-left: 40px;
+}
+.MensBannerImgData2{
+  padding:7px;
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.MensBannerImgData2:hover{
+color: white;
+background: black;
+}
+
+.MAinCartImage{
+  height: 380px;
+}
+.MAinBigCartImage{
+  height:650px;
+  width: 480px;
+}
+.MAinBigCartImageButton{
+  width: 200px;
+  border:3px solid  black;
+  padding: 13px;
+  margin-top: 20px;
+font-weight: bold;
+border-radius: 0%;
+}
+.MAinBigCartImageButton:hover{
+  color: #fff;
+  background-color:black;
+}
+
+
+
+.MensMainBanner2{
+display: none;
+}
+.MensMainBigCards{
+  display:grid;
+  grid-template-columns: 1fr;
+  
+}
+/* /////////////////////////////// */
+
+.MenMensFirstBlackInfoDive{
+  display:flex;justify-content:space-around;background:black;align-items:center;
+}
+.MenMensFirstBlackInfoDiveBtn{
+ background:black;color:white;width:100px;border-color:white;font-weight:bold;
+}
+.MenMensFirstBlackInfoDiveBtnsec{
+  background:black;color:white;width:100px;border-color:white;font-weight:bold;
+}
+
+.Lieferung img{
+  width: 480px;
+  height: 70px;
+}
+.afberPay img{
+  width: 480px;
+  height: 70px;
+}
+
+
+.TopBrands{
+  display: none;
+}
+
+}
+
+
+@media all and (min-width:481px) and (max-width: 640px) {
+          
+.MensBannerImg{
+  background-image: url('https://content.asos-media.com/-/media/homepages/mw/2022/june/06/hero/mw1_dt_hero_1258x600.jpg');
+  height: 300px;
+ 
+  background-size: contain;
+  margin-left:10px;
+}
+.MaleMensCard{
+  gap:20px;text-align:center;display:grid;
+  grid-template-columns: repeat( 1fr);
+  justify-content:center;margin-top:40px;
+}
+.MensBannerImgData{
+  margin-left: 80px;
+  /* background-color: red; */
+  text-align: center;
+  margin-top: 150px;
+ 
+  position: absolute;
+}
+.MensBannerImgData1{
+padding: 3px;
+background-color: white;
+height: 30px;
+width: 100px;
+text-align: center;
+font-size: 13px;
+font-weight: bold;
+margin-left: 140px;
+}
+.MensBannerImgData2{
+  padding:7px;
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.MensBannerImgData2:hover{
+color: white;
+background: black;
+}
+
+.MAinCartImage{
+  height: 380px;
+}
+.MAinBigCartImage{
+  height:650px;
+  width: 480px;
+}
+.MAinBigCartImageButton{
+  width: 200px;
+  border:3px solid  black;
+  padding: 13px;
+  margin-top: 20px;
+font-weight: bold;
+border-radius: 0%;
+}
+.MAinBigCartImageButton:hover{
+  color: #fff;
+  background-color:black;
+}
+
+
+
+.MensMainBanner2{
+display: none;
+}
+.MensMainBigCards{
+  display:grid;
+  grid-template-columns: 1fr;
+  
+}
+/* /////////////////////////////// */
+
+
+
+.Lieferung img{
+  width: 640px;
+  height: 70px;
+}
+.afberPay img{
+  width: 640px;
+  height: 70px;
+}
+.TopBrands{
+  display: none;
+}
+}
+
+@media all and (min-width:641px) and (max-width: 780px) {
+  
+  .MensBannerImg{
+    background-image: url('https://content.asos-media.com/-/media/homepages/mw/2022/june/06/hero/mw1_dt_hero_1258x600.jpg');
+    height: 400px;
+   
+    background-size: contain;
+    margin-left:10px;
+  }
+  .MaleMensCard{
+    gap:20px;text-align:center;
+    display:grid;
+    grid-template-columns: repeat( 2 ,1fr);
+    justify-content:center;margin-top:40px;
+  }
+  .MensBannerImgData{
+    margin-left: 80px;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 180px;
+   
+    position: absolute;
+  }
+  .MensBannerImgData1{
+  padding: 3px;
+  background-color: white;
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 220px;
+  }
+  .MensBannerImgData2{
+    padding:7px;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 180px;
+  }
+  .MensBannerImgData2:hover{
+  color: white;
+  background: black;
+  }
+  
+  .MAinCartImage{
+    height: 380px;
+  }
+  .MAinBigCartImage{
+    height:650px;
+    width: 480px;
+  }
+  .MAinBigCartImageButton{
+    width: 200px;
+    border:3px solid  black;
+    padding: 13px;
+    margin-top: 20px;
+  font-weight: bold;
+  border-radius: 0%;
+  }
+  .MAinBigCartImageButton:hover{
+    color: #fff;
+    background-color:black;
+  }
+  
+  
+  
+  .MensMainBanner2{
+  display: none;
+  }
+  .MensMainBigCards{
+    display:grid;
+    grid-template-columns: 1fr;
+    
+  }
+  /* /////////////////////////////// */
+  
+  
+  
+  .Lieferung img{
+    width: 780px;
+    height: 70px;
+  }
+  .afberPay img{
+    width: 780px;
+    height: 70px;
+  }
+  
+  .TopBrands {
+   
+    display: block;
+  }
+
+}
+@media all and (min-width:781px) and (max-width: 998px) {
+  
+  .MensBannerImg{
+    background-image: url('https://content.asos-media.com/-/media/homepages/mw/2022/june/06/hero/mw1_dt_hero_1258x600.jpg');
+    height: 400px;
+   
+    background-size: contain;
+    margin-left:10px;
+  }
+  .MaleMensCard{
+    gap:20px;text-align:center;
+    display:grid;
+    grid-template-columns: repeat( 2 ,1fr);
+    justify-content:center;margin-top:40px;
+  }
+  .MensBannerImgData{
+    margin-left: 80px;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 180px;
+   
+    position: absolute;
+  }
+  .MensBannerImgData1{
+  padding: 3px;
+  background-color: white;
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 220px;
+  }
+  .MensBannerImgData2{
+    padding:7px;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 180px;
+  }
+  .MensBannerImgData2:hover{
+  color: white;
+  background: black;
+  }
+  
+  .MAinCartImage{
+    height: 380px;
+  }
+  .MAinBigCartImage{
+    height:650px;
+    width: 480px;
+  }
+  .MAinBigCartImageButton{
+    width: 200px;
+    border:3px solid  black;
+    padding: 13px;
+    margin-top: 20px;
+  font-weight: bold;
+  border-radius: 0%;
+  }
+  .MAinBigCartImageButton:hover{
+    color: #fff;
+    background-color:black;
+  }
+  
+  
+  
+  .MensMainBanner2{
+  display: none;
+  }
+  .MensMainBigCards{
+    display:grid;
+    grid-template-columns: 1fr;
+    
+  }
+  /* /////////////////////////////// */
+  
+  
+  
+  .Lieferung img{
+    width: 999px;
+    height: 100px;
+  }
+  .afberPay img{
+    width: 999px;
+    height: 90px;
+  }
+  
+  .TopBrands {
+   
+    display: none;
+  }
+
+
 }

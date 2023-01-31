@@ -230,9 +230,17 @@
   height: 4rem;
   
 }
+.bagLenghDiv{
+  display: flex;
+}
 .UnicSearch{
   color: white;
   font-size: 24px;
+}
+.NavBarItemLength{
+  font-size: 10px;
+  color: white;
+ 
 }
 
 .Logo{
@@ -261,10 +269,11 @@
 .Icons{
   gap: 20px;
 }
+
 .IconEdit{
   color: white;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
 }
 .hammThreeLines{
   display: block;

@@ -12,13 +12,15 @@ const Discpage = () => {
     console.log(id)
 
     useEffect(()=>{
-      fetch(`https://assosapi.herokuapp.com/mensData/${id}`)
+      fetch(`https://good-red-crocodile-shoe.cyclic.app/assos/get/${id}`)
       .then((r)=>r.json())
       .then((d)=>{
         // console.log(d)
         setDesc(d);
       })
     },[])
+
+    console.log(desc);
 
   return (
     <>

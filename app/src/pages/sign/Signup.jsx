@@ -84,7 +84,7 @@ export const Signup = ()=>{
             <input className = "RegInput" name = "date_of_birth" type = "date" onChange = {handlechange} />
             </div>
             <button className = " btn joinASSOS" onClick = {()=>{
-                fetch('https://loginvaibha.herokuapp.com/users', {
+                fetch('https://determined-gaiters-deer.cyclic.app/user/register', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',

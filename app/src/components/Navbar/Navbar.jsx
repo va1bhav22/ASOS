@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className='NavSearch'><FiSearch className='UnicSearch'/></div>
             <div><Link to='/Signup'><HiOutlineUser className='IconEdit'/></Link></div>
             <div><Link  to='/Save'><BsHeart className='IconEdit'/></Link></div>
-            <div><Link to='/Bag'><BsBag className='IconEdit'/><span style={{color:"white"}}>{crtdata.length}</span></Link></div>              
+            <div className='bagLenghDiv'><Link style={{textDecoration:"none"}} to='/Bag'><BsBag className='IconEdit'/><span className='NavBarItemLength'>{crtdata.length}</span></Link></div>              
           </div>
          
       </div>
@@ -65,24 +65,3 @@ export default Navbar
 
 
 
-{/* <MiniNav/>
-      <div  className='nav mainNav navbar-expand-sm ' >
-     <div>
-     <Link to='/'></Link>
-
-      <img onClick={handleNavigate} style={{height:"90px",marginRight:"30px"}} src="https://image.pitchbook.com/uOcUSgJVnsjM1HbMQlkK59pDzkf1605376695731_200x200" alt="" />
-      <Link style={{color:"white",marginRight:"30px",textDecoration:"none",fontSize:"20px"}} to='/Womens'>WOMEN</Link>
-      <Link  style={{color:"white",marginRight:"30px",textDecoration:"none",fontSize:"20px"}} to='/Mens'>MEN</Link>
-     </div>
-      
-      <div className="inputicon">
-        <input className='NavInput' type="text" placeholder='Search for items and brands' /><i  className="fa-solid fa-magnifying-glass"></i>
-        </div>
-      
-      <div style={{marginLeft:"-30px"}}>
-      <Link  ><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} className="fa-solid fa-user"></i></Link>
-      <Link ><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} className="fa-solid fa-heart"></i></Link>
-      <Link ><i  style={{color:"white",fontSize:"25px",marginLeft:"50px"}} className="fa-solid fa-bag-shopping"></i><span style={{color:"white",fontSize:"25px",textDecoration:"none"}}></span></Link> 
-      </div>
-    </div>
-    <NextNav/> */}
